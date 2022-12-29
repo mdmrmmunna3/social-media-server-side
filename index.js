@@ -19,6 +19,12 @@ async function run() {
     try {
         const postDataCollection = client.db('socialMedia').collection('postData');
 
+        app.post("/postData", async (req, res) => {
+            const userPostData = req.body;
+            const result = await postDataCollection.insertOne(userPostData);
+            // console.log(result)
+            res.send(result);
+        })
 
     }
 
