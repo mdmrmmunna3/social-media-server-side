@@ -11,12 +11,11 @@
   "devDependencies": {},
   "scripts": {
     "start": "node index.js",
+    "build": "node index.js",
     "start-dev": "nodemon index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  
   "keywords": [],
   "author": "",
   "license": "ISC"
-  
 }
